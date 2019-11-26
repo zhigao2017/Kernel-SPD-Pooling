@@ -1,7 +1,10 @@
 # Kernel-SPD-Pooling
-The code of PR 2019 paper "Learning a robust representation via a deep network on symmetric positive definite manifolds"
+The code of PR 2019 paper "Learning a robust representation via a deep network on symmetric positive definite manifolds".
 
-An example is put in 
+
+The caffe framework is required.
+
+An example on the MINC dataset is put in 
 ```
 examples/minc
 ```
