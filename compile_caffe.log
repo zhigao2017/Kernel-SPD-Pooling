@@ -1,0 +1,371 @@
+PROTOC src/caffe/proto/caffe.proto
+CXX src/caffe/solver.cpp
+CXX src/caffe/blob.cpp
+CXX src/caffe/net.cpp
+CXX src/caffe/solvers/nesterov_solver.cpp
+CXX src/caffe/solvers/adadelta_solver.cpp
+CXX src/caffe/solvers/rmsprop_solver.cpp
+CXX src/caffe/solvers/sgd_solver.cpp
+CXX src/caffe/solvers/adagrad_solver.cpp
+CXX src/caffe/solvers/adam_solver.cpp
+CXX src/caffe/layer.cpp
+CXX src/caffe/util/hdf5.cpp
+CXX src/caffe/util/cudnn.cpp
+CXX src/caffe/util/math_functions.cpp
+CXX src/caffe/util/im2col.cpp
+CXX src/caffe/util/db_leveldb.cpp
+CXX src/caffe/util/upgrade_proto.cpp
+CXX src/caffe/util/db.cpp
+CXX src/caffe/util/io.cpp
+CXX src/caffe/util/blocking_queue.cpp
+CXX src/caffe/util/benchmark.cpp
+CXX src/caffe/util/kiss_fft.cpp
+CXX src/caffe/util/signal_handler.cpp
+CXX src/caffe/util/db_lmdb.cpp
+CXX src/caffe/util/kiss_fftr.cpp
+CXX src/caffe/util/insert_splits.cpp
+CXX src/caffe/common.cpp
+CXX src/caffe/internal_thread.cpp
+CXX src/caffe/layer_factory.cpp
+CXX src/caffe/data_transformer.cpp
+CXX src/caffe/parallel.cpp
+CXX src/caffe/syncedmem.cpp
+CXX src/caffe/layers/relu_layer.cpp
+CXX src/caffe/layers/sigmoid_layer.cpp
+CXX src/caffe/layers/flatten_layer.cpp
+CXX src/caffe/layers/accuracy_layer.cpp
+CXX src/caffe/layers/softmax_layer.cpp
+CXX src/caffe/layers/lrn_layer.cpp
+CXX src/caffe/layers/rnn_layer.cpp
+CXX src/caffe/layers/cudnn_lcn_layer.cpp
+CXX src/caffe/layers/absval_layer.cpp
+CXX src/caffe/layers/hdf5_output_layer.cpp
+CXX src/caffe/layers/multinomial_logistic_loss_layer.cpp
+CXX src/caffe/layers/im2col_layer.cpp
+CXX src/caffe/layers/cudnn_conv_layer.cpp
+CXX src/caffe/layers/cudnn_sigmoid_layer.cpp
+CXX src/caffe/layers/softmax_loss_layer.cpp
+CXX src/caffe/layers/euclidean_loss_layer.cpp
+CXX src/caffe/layers/elu_layer.cpp
+CXX src/caffe/layers/compact_bilinear_layer.cpp
+CXX src/caffe/layers/scale_layer.cpp
+CXX src/caffe/layers/tile_layer.cpp
+CXX src/caffe/layers/contrastive_loss_layer.cpp
+CXX src/caffe/layers/window_data_layer.cpp
+CXX src/caffe/layers/batch_reindex_layer.cpp
+CXX src/caffe/layers/power_layer.cpp
+CXX src/caffe/layers/mvn_layer.cpp
+CXX src/caffe/layers/l2_normalize_layer.cpp
+CXX src/caffe/layers/split_layer.cpp
+CXX src/caffe/layers/batch_norm_layer.cpp
+CXX src/caffe/layers/parameter_layer.cpp
+CXX src/caffe/layers/crop_layer.cpp
+CXX src/caffe/layers/argmax_layer.cpp
+CXX src/caffe/layers/threshold_layer.cpp
+CXX src/caffe/layers/embed_layer.cpp
+CXX src/caffe/layers/kernelrbf_layer.cpp
+CXX src/caffe/layers/sigmoid_cross_entropy_loss_layer.cpp
+CXX src/caffe/layers/neuron_layer.cpp
+CXX src/caffe/layers/data_layer.cpp
+CXX src/caffe/layers/cudnn_lrn_layer.cpp
+CXX src/caffe/layers/eltwise_layer.cpp
+CXX src/caffe/layers/cudnn_tanh_layer.cpp
+CXX src/caffe/layers/bnll_layer.cpp
+CXX src/caffe/layers/base_data_layer.cpp
+CXX src/caffe/layers/spp_layer.cpp
+CXX src/caffe/layers/pooling_layer.cpp
+CXX src/caffe/layers/bilinear_layer.cpp
+CXX src/caffe/layers/cudnn_softmax_layer.cpp
+CXX src/caffe/layers/image_data_layer.cpp
+CXX src/caffe/layers/inner_product_layer.cpp
+CXX src/caffe/layers/tanh_layer.cpp
+CXX src/caffe/layers/recurrent_layer.cpp
+CXX src/caffe/layers/conv_layer.cpp
+CXX src/caffe/layers/silence_layer.cpp
+CXX src/caffe/layers/exp_layer.cpp
+CXX src/caffe/layers/reshape_layer.cpp
+CXX src/caffe/layers/dropout_layer.cpp
+CXX src/caffe/layers/reduction_layer.cpp
+CXX src/caffe/layers/bias_layer.cpp
+CXX src/caffe/layers/signed_sqrt_layer.cpp
+CXX src/caffe/layers/cudnn_pooling_layer.cpp
+CXX src/caffe/layers/infogain_loss_layer.cpp
+CXX src/caffe/layers/base_conv_layer.cpp
+CXX src/caffe/layers/input_layer.cpp
+CXX src/caffe/layers/loss_layer.cpp
+CXX src/caffe/layers/lstm_unit_layer.cpp
+CXX src/caffe/layers/log_layer.cpp
+CXX src/caffe/layers/deconv_layer.cpp
+CXX src/caffe/layers/slice_layer.cpp
+CXX src/caffe/layers/hinge_loss_layer.cpp
+CXX src/caffe/layers/dummy_data_layer.cpp
+CXX src/caffe/layers/lstm_layer.cpp
+CXX src/caffe/layers/prelu_layer.cpp
+CXX src/caffe/layers/hdf5_data_layer.cpp
+CXX src/caffe/layers/cudnn_relu_layer.cpp
+CXX src/caffe/layers/filter_layer.cpp
+CXX src/caffe/layers/concat_layer.cpp
+CXX src/caffe/layers/memory_data_layer.cpp
+NVCC src/caffe/solvers/rmsprop_solver.cu
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+NVCC src/caffe/solvers/adadelta_solver.cu
+NVCC src/caffe/solvers/nesterov_solver.cu
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+NVCC src/caffe/solvers/adagrad_solver.cu
+NVCC src/caffe/solvers/adam_solver.cu
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+NVCC src/caffe/solvers/sgd_solver.cu
+NVCC src/caffe/util/im2col.cu
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+NVCC src/caffe/util/math_functions.cu
+NVCC src/caffe/layers/cudnn_sigmoid_layer.cu
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+NVCC src/caffe/layers/filter_layer.cu
+NVCC src/caffe/layers/embed_layer.cu
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+NVCC src/caffe/layers/l2_normalize_layer.cu
+NVCC src/caffe/layers/eltwise_layer.cu
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+NVCC src/caffe/layers/softmax_layer.cu
+NVCC src/caffe/layers/sigmoid_cross_entropy_loss_layer.cu
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+NVCC src/caffe/layers/batch_norm_layer.cu
+NVCC src/caffe/layers/cudnn_lrn_layer.cu
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+NVCC src/caffe/layers/inner_product_layer.cu
+NVCC src/caffe/layers/cudnn_relu_layer.cu
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+NVCC src/caffe/layers/bnll_layer.cu
+NVCC src/caffe/layers/bilinear_layer.cu
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+NVCC src/caffe/layers/split_layer.cu
+NVCC src/caffe/layers/cudnn_conv_layer.cu
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+NVCC src/caffe/layers/pooling_layer.cu
+NVCC src/caffe/layers/im2col_layer.cu
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+NVCC src/caffe/layers/cudnn_lcn_layer.cu
+NVCC src/caffe/layers/sigmoid_layer.cu
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+NVCC src/caffe/layers/kernelrbf_layer.cu
+NVCC src/caffe/layers/crop_layer.cu
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+NVCC src/caffe/layers/silence_layer.cu
+NVCC src/caffe/layers/absval_layer.cu
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+NVCC src/caffe/layers/cudnn_tanh_layer.cu
+NVCC src/caffe/layers/compact_bilinear_layer.cu
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+NVCC src/caffe/layers/log_layer.cu
+NVCC src/caffe/layers/hdf5_output_layer.cu
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+NVCC src/caffe/layers/reduction_layer.cu
+NVCC src/caffe/layers/batch_reindex_layer.cu
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+NVCC src/caffe/layers/cudnn_pooling_layer.cu
+NVCC src/caffe/layers/contrastive_loss_layer.cu
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+NVCC src/caffe/layers/hdf5_data_layer.cu
+NVCC src/caffe/layers/elu_layer.cu
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+NVCC src/caffe/layers/threshold_layer.cu
+NVCC src/caffe/layers/dropout_layer.cu
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+NVCC src/caffe/layers/relu_layer.cu
+NVCC src/caffe/layers/bias_layer.cu
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+NVCC src/caffe/layers/euclidean_loss_layer.cu
+NVCC src/caffe/layers/softmax_loss_layer.cu
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+NVCC src/caffe/layers/recurrent_layer.cu
+NVCC src/caffe/layers/tile_layer.cu
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+NVCC src/caffe/layers/conv_layer.cu
+NVCC src/caffe/layers/lstm_unit_layer.cu
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+NVCC src/caffe/layers/slice_layer.cu
+NVCC src/caffe/layers/exp_layer.cu
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+NVCC src/caffe/layers/power_layer.cu
+NVCC src/caffe/layers/lrn_layer.cu
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+NVCC src/caffe/layers/signed_sqrt_layer.cu
+NVCC src/caffe/layers/mvn_layer.cu
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+NVCC src/caffe/layers/scale_layer.cu
+NVCC src/caffe/layers/concat_layer.cu
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+NVCC src/caffe/layers/prelu_layer.cu
+NVCC src/caffe/layers/deconv_layer.cu
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+NVCC src/caffe/layers/cudnn_softmax_layer.cu
+NVCC src/caffe/layers/tanh_layer.cu
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+NVCC src/caffe/layers/base_data_layer.cu
+CXX tools/extract_features.cpp
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+CXX tools/upgrade_net_proto_text.cpp
+CXX tools/upgrade_solver_proto_text.cpp
+CXX tools/train_net.cpp
+CXX tools/convert_imageset.cpp
+CXX tools/net_speed_benchmark.cpp
+CXX tools/finetune_net.cpp
+CXX tools/caffe.cpp
+CXX tools/test_net.cpp
+CXX tools/upgrade_net_proto_binary.cpp
+CXX tools/device_query.cpp
+CXX tools/compute_image_mean.cpp
+CXX examples/cifar10/convert_cifar_data.cpp
+CXX examples/cpp_classification/classification.cpp
+CXX examples/siamese/convert_mnist_siamese_data.cpp
+CXX examples/mnist/convert_mnist_data.cpp
+CXX .build_release/src/caffe/proto/caffe.pb.cc
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+src/caffe/layers/compact_bilinear_layer.cu(346): warning: variable "ihw" was declared but never referenced
+          detected during instantiation of "void caffe::CompactBilinearLayer<Dtype>::Backward_gpu(const std::vector<caffe::Blob<Dtype> *, std::allocator<caffe::Blob<Dtype> *>> &, const std::vector<__nv_bool, std::allocator<__nv_bool>> &, const std::vector<caffe::Blob<Dtype> *, std::allocator<caffe::Blob<Dtype> *>> &) [with Dtype=float]" 
+(504): here
+
+src/caffe/layers/compact_bilinear_layer.cu(386): warning: variable "m" was declared but never referenced
+          detected during instantiation of "void caffe::CompactBilinearLayer<Dtype>::Backward_gpu(const std::vector<caffe::Blob<Dtype> *, std::allocator<caffe::Blob<Dtype> *>> &, const std::vector<__nv_bool, std::allocator<__nv_bool>> &, const std::vector<caffe::Blob<Dtype> *, std::allocator<caffe::Blob<Dtype> *>> &) [with Dtype=float]" 
+(504): here
+
+src/caffe/layers/compact_bilinear_layer.cu(346): warning: variable "ihw" was declared but never referenced
+          detected during instantiation of "void caffe::CompactBilinearLayer<Dtype>::Backward_gpu(const std::vector<caffe::Blob<Dtype> *, std::allocator<caffe::Blob<Dtype> *>> &, const std::vector<__nv_bool, std::allocator<__nv_bool>> &, const std::vector<caffe::Blob<Dtype> *, std::allocator<caffe::Blob<Dtype> *>> &) [with Dtype=float]" 
+(504): here
+
+src/caffe/layers/compact_bilinear_layer.cu(386): warning: variable "m" was declared but never referenced
+          detected during instantiation of "void caffe::CompactBilinearLayer<Dtype>::Backward_gpu(const std::vector<caffe::Blob<Dtype> *, std::allocator<caffe::Blob<Dtype> *>> &, const std::vector<__nv_bool, std::allocator<__nv_bool>> &, const std::vector<caffe::Blob<Dtype> *, std::allocator<caffe::Blob<Dtype> *>> &) [with Dtype=float]" 
+(504): here
+
+src/caffe/layers/compact_bilinear_layer.cu(346): warning: variable "ihw" was declared but never referenced
+          detected during instantiation of "void caffe::CompactBilinearLayer<Dtype>::Backward_gpu(const std::vector<caffe::Blob<Dtype> *, std::allocator<caffe::Blob<Dtype> *>> &, const std::vector<__nv_bool, std::allocator<__nv_bool>> &, const std::vector<caffe::Blob<Dtype> *, std::allocator<caffe::Blob<Dtype> *>> &) [with Dtype=float]" 
+(504): here
+
+src/caffe/layers/compact_bilinear_layer.cu(386): warning: variable "m" was declared but never referenced
+          detected during instantiation of "void caffe::CompactBilinearLayer<Dtype>::Backward_gpu(const std::vector<caffe::Blob<Dtype> *, std::allocator<caffe::Blob<Dtype> *>> &, const std::vector<__nv_bool, std::allocator<__nv_bool>> &, const std::vector<caffe::Blob<Dtype> *, std::allocator<caffe::Blob<Dtype> *>> &) [with Dtype=float]" 
+(504): here
+
+src/caffe/layers/compact_bilinear_layer.cu(346): warning: variable "ihw" was declared but never referenced
+          detected during instantiation of "void caffe::CompactBilinearLayer<Dtype>::Backward_gpu(const std::vector<caffe::Blob<Dtype> *, std::allocator<caffe::Blob<Dtype> *>> &, const std::vector<__nv_bool, std::allocator<__nv_bool>> &, const std::vector<caffe::Blob<Dtype> *, std::allocator<caffe::Blob<Dtype> *>> &) [with Dtype=float]" 
+(504): here
+
+src/caffe/layers/compact_bilinear_layer.cu(386): warning: variable "m" was declared but never referenced
+          detected during instantiation of "void caffe::CompactBilinearLayer<Dtype>::Backward_gpu(const std::vector<caffe::Blob<Dtype> *, std::allocator<caffe::Blob<Dtype> *>> &, const std::vector<__nv_bool, std::allocator<__nv_bool>> &, const std::vector<caffe::Blob<Dtype> *, std::allocator<caffe::Blob<Dtype> *>> &) [with Dtype=float]" 
+(504): here
+
+src/caffe/layers/compact_bilinear_layer.cu(346): warning: variable "ihw" was declared but never referenced
+
+src/caffe/layers/compact_bilinear_layer.cu(386): warning: variable "m" was declared but never referenced
+
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+AR -o .build_release/lib/libcaffe.a
+LD -o .build_release/lib/libcaffe.so.1.0.0-rc3
+CXX/LD -o .build_release/tools/extract_features.bin
+CXX/LD -o .build_release/tools/upgrade_solver_proto_text.bin
+CXX/LD -o .build_release/tools/upgrade_net_proto_text.bin
+CXX/LD -o .build_release/tools/train_net.bin
+CXX/LD -o .build_release/tools/convert_imageset.bin
+CXX/LD -o .build_release/tools/net_speed_benchmark.bin
+CXX/LD -o .build_release/tools/finetune_net.bin
+CXX/LD -o .build_release/tools/caffe.bin
+CXX/LD -o .build_release/tools/test_net.bin
+CXX/LD -o .build_release/tools/upgrade_net_proto_binary.bin
+CXX/LD -o .build_release/tools/compute_image_mean.bin
+CXX/LD -o .build_release/tools/device_query.bin
+CXX/LD -o .build_release/examples/cifar10/convert_cifar_data.bin
+CXX/LD -o .build_release/examples/cpp_classification/classification.bin
+CXX/LD -o .build_release/examples/siamese/convert_mnist_siamese_data.bin
+CXX/LD -o .build_release/examples/mnist/convert_mnist_data.bin

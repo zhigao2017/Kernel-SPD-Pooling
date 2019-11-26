@@ -1,0 +1,1 @@
+./train_lenet.sh: 4: ./train_lenet.sh: ./build/tools/caffe: not found

@@ -1,0 +1,52 @@
+name: "pythonKernelRbfNet"
+
+force_backward: true
+
+layer {
+  name: "data"
+  type: "Input"
+  top: "data"
+  input_param { shape: { dim: 1 dim: 3 dim: 5 dim: 5 } }
+}
+
+layer {
+  name: "label"
+  type: "Input"
+  top: "label"
+  input_param { shape: { dim: 1 dim: 1 dim: 5 dim: 5 } }
+}
+
+layer {
+  name: "conv1_1"
+  type: "Convolution"
+  bottom: "data"
+  top: "conv1_1"
+  param {
+    lr_mult: 1.0
+    decay_mult: 1.0
+  }
+  param {
+    lr_mult: 2.0
+    decay_mult: 2.0
+  }
+  convolution_param {
+    num_output: 5
+    kernel_size: 3
+  }
+}
+
+layer {
+  name: "kernel"
+  type: "KernelRbf"
+  bottom: "conv1_1"
+  bottom: "conv1_1"
+  top: "KernelRbf"
+}
+
+layer {
+  name: "loss"
+  type: "EuclideanLoss"
+  bottom: "KernelRbf"
+  bottom: "label"
+  top: "loss"
+}

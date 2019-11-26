@@ -1,0 +1,16 @@
+test_iter: 1438
+test_interval: 500
+display: 100
+max_iter: 8000
+
+lr_policy: "multistep"
+base_lr: 0.00001
+
+
+
+momentum: 0.9
+weight_decay: 0.000005
+snapshot: 10000
+
+snapshot_prefix: "/home/tensorflow/dist2T/gaozhi/SPD_aggregation_data/snapshot/minc_dimen/minc_conv512trans512"
+net: "minc_conv_all.prototxt"
