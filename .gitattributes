@@ -1,0 +1,2 @@
+*.cpp linguist-language=caffe
+*.cu linguist-language=caffe
